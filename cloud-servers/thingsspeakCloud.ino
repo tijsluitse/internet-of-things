@@ -1,8 +1,8 @@
 #include "ThingSpeak.h"
 #include <ESP8266WiFi.h>
 
-char ssid[] = "iPhone van Tijs Luitse";
-char pass[] = "johannes";
+char ssid[] = "xxxxxxx";
+char pass[] = "xxxxxxx";
 
 int status = WL_IDLE_STATUS;
 WiFiClient  client;
