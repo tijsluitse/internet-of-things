@@ -7,8 +7,8 @@
 EIoTCloudRestApi eiotcloud;
 
 // Thingspeak
-char ssid[] = "iPhone van Tijs Luitse";
-char pass[] = "johannes";
+char ssid[] = "xxxxxx";
+char pass[] = "xxxxxx";
 
 int status = WL_IDLE_STATUS;
 WiFiClient  client;
