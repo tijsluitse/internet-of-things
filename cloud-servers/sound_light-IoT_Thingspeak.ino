@@ -3,12 +3,16 @@
 #include "ThingSpeak.h"
 #include <ESP8266WiFi.h>
 
+// Declarations
+int sound = digitalRead(D0);
+int light = analogRead(A0);
+
 // IoT
 EIoTCloudRestApi eiotcloud;
 
 // Thingspeak
-char ssid[] = "xxxxxx";
-char pass[] = "xxxxxx";
+char ssid[] = "iPhone van Tijs Luitse";
+char pass[] = "johannes";
 
 int status = WL_IDLE_STATUS;
 WiFiClient  client;
@@ -26,10 +30,7 @@ void setup() {
 }
 
 void loop() {
-  
-  int sound = digitalRead(D0);
-  int light = analogRead(A0);
-
+ 
   ThingSpeak.setField(1,sound);
   ThingSpeak.setField(2,light);
 
