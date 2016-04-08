@@ -11,8 +11,8 @@ int light = analogRead(A0);
 EIoTCloudRestApi eiotcloud;
 
 // Thingspeak
-char ssid[] = "iPhone van Tijs Luitse";
-char pass[] = "johannes";
+const ssid[] = "iPhone van Tijs Luitse";
+const pass[] = "johannes";
 
 int status = WL_IDLE_STATUS;
 WiFiClient  client;
