@@ -1,0 +1,147 @@
+* {
+    font-family: "Lato";
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+section {
+    position: relative;
+    margin: 50px 0px;
+    text-align: center;
+}
+h1 {
+    padding: 1em;
+    text-align: center;
+    margin: 1em;
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+    font-size: 2em;
+}
+h4 {
+    margin: auto;
+    text-align: center;
+    margin-top: 3em;
+}
+.ready {
+    background-color: white;
+    padding: .5em;
+    color: black;
+    font-size: 2em;
+    text-align: center;
+    animation: down ease 500ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 1em 1em 1em;
+}
+@keyframes down {
+    0% {
+        transform: translateY(-100vh);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.growed {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3em;
+}
+.off, .on {
+    border: none;
+    border-bottom: 5px solid #ecf0f1;
+    width: 10em;
+    font-family: "Lato";
+    font-size: 1.2em;
+    background-color: white;
+    border-radius: 10px;
+    padding: .5em;
+}
+
+.on, .aOn {
+    color: #2ecc71;
+}
+.off, .aOff {
+    color: #e74c3c;
+}
+
+.on:focus {
+    border-bottom: none;
+    transform: translateY(5px);
+}
+.off:focus {
+    border-bottom: none;
+    transform: translateY(5px);
+}
+a {
+    text-decoration: none;
+    margin: .5em;
+}
+.turn {
+    font-family: "Lato";
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+button {
+    margin: .4em .2em;
+    cursor: pointer;
+}
+.history {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 1;
+    margin-bottom: 4em;
+}
+
+.height {
+    background-color: #1abc9c;
+    border-radius: 5em;
+    border: 10px solid #3498db;
+    height: 3em;
+    width: 3em;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.date {
+    font-size: .8em;
+    margin-top: 2em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+hr {
+    padding-top: 4em;
+    width: 100%;
+    border: none;
+    border-bottom: 10px solid white;
+    z-index: -1;
+    margin: 0 auto;
+}
+#chart {
+    width: 80%;
+    margin: auto;
+    padding: 1em;
+    background-color: rgba(8, 8, 8, 0.46);
+}
+}
