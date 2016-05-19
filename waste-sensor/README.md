@@ -124,7 +124,7 @@ void loop() {
 	     	digitalWrite(led3, LOW); 
 	     	Serial.println("Out of range");
 	     	sound = 1;
-	     	tone(buzzer, sound);
+	     	noTone(buzzer, sound);
 	    }
 	    if (distance > 50 && distance < 70) {
 	     	waste = "1";
@@ -132,12 +132,7 @@ void loop() {
 	     	digitalWrite(led2, LOW);
 	     	digitalWrite(led3, LOW);
 	     	Serial.println("Empty");
-	     	if (payload == "on") {
-	      		sound = 50;
-	      		tone(buzzer, sound);
-	     	} else {
-	      		noTone(buzzer);
-	     	}
+	     	noTone(buzzer, sound);
 	    }  
 	    if (distance > 20 && distance < 50) {
 	     	waste = "2";
@@ -145,12 +140,7 @@ void loop() {
 	     	digitalWrite(led2, HIGH);
 	     	digitalWrite(led3, LOW); 
 	     	Serial.println("Almost full");
-	     	if (payload == "on") {
-	      		sound = 100;
-	      		tone(buzzer, sound);
-	     	} else {
-	      		noTone(buzzer);
-	     	}
+	     	noTone(buzzer, sound);
 	    }  
 	    if (distance > 0 && distance < 20) {  
 	     	waste = "4";     
