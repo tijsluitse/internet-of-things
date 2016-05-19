@@ -12,12 +12,14 @@ In this manual I will explain how to build an automatic waste meter to measure t
 ###Setup
 Connect the leds, distance sensor and buzzer to your ESP. I used the following setup. 
 
-HC-SR04 Trig = D0
-HC-SR04 Echo = D1
-Buzzer = D2
-Led 1 = D6
-Led 2 = D7
-Led 3 = D8
+| Hardware        | Port           
+| ------------- |:-------------:| 
+| HC-SR04 Trig     | D0 | 
+| HC-SR04 Echo     | D1 | 
+| Buzzer     | D2 | 
+| Led 1      | D6      |   
+| Led 2 | D7      | 
+| Led 3 | D8      |  
 
 ###Arduino
 After connecting all the materials. We need to setup the arduino code. First of all you initialize all the wifi stuff and your materials. 
