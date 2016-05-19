@@ -1,7 +1,7 @@
-##Automatic waste meter:
+#Automatic waste meter:
 In this manual I will explain how to build an automatic waste meter to measure the waste inside your bin. 
 
-###Materials:
+##Materials:
 - Breadboard
 - ESP8266 UMC
 - Distance meter
@@ -11,7 +11,7 @@ In this manual I will explain how to build an automatic waste meter to measure t
 
 ![Arduino setup](img/arduino.jpg)
 
-###Setup
+##Setup
 Connect the leds, distance sensor and buzzer to your ESP. I used the following setup. 
 
 | Hardware        | Port           
@@ -23,7 +23,7 @@ Connect the leds, distance sensor and buzzer to your ESP. I used the following s
 | Led 2 | D7      | 
 | Led 3 | D8      |  
 
-###Arduino
+##Arduino
 After connecting all the materials. We need to setup the arduino code. First of all you initialize all the wifi stuff and your materials. 
 
 ```
@@ -84,7 +84,7 @@ With the ESP8266 wifi drivers you are able to connect to the wifi. You need to r
 ##Data file
 To write data to the server you need to create a JSON file. ```[{time: "", waste: ""}]``` It will be an array with the time and the waste height. Later on the JSON file will be splitted in to arrays, which we can use to make a chart. Underneath you can check how we post data to the JSON file. 
 
-###Buzzer file
+##Buzzer file
 To check if the buzzer is on or off you need to create an output.txt file. The php code writes "on" or "off" to the text file, which the ESP reads with a http request. Underneath you can check the http get request.  
 
 ##Arduino loop
