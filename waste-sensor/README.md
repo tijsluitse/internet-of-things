@@ -54,7 +54,14 @@ int echoPin = D1;
 // BUZZER
 int buzzer = D2;
 int sound = 250;
+```
 
+With the ESP8266 wifi drivers you are able to connect to the wifi. You need to replace these "xxx" with your own wifi network information. ```const char* ssid = "xxx"; const char* pass = "xxx";``` .
+
+##Setup
+In your setup you create the wifi connection and and set all the materials to pinmodes.
+
+```
 void setup() {
 
   // SETUP PINMODES
@@ -78,8 +85,6 @@ void setup() {
   
 }
 ```
-
-With the ESP8266 wifi drivers you are able to connect to the wifi. You need to replace these "xxx" with your own wifi network information. ```const char* ssid = "xxx"; const char* pass = "xxx";``` .
 
 ##Data file
 To write data to the server you need to create a JSON file. ```[{time: "", waste: ""}]``` It will be an array with the time and the waste height. Later on the JSON file will be splitted in to arrays, which we can use to make a chart. Underneath you can check how we post data to the JSON file. 
